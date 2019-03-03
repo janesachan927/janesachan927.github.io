@@ -1,0 +1,60 @@
+nav {
+    text-align: center;
+    background-color: silver;
+    position: fixed;
+    width: 100%
+}
+
+.nav-wrapper li {
+    display: inline;
+    padding: 20px;
+}
+
+.nav-wrapper a {
+  color: blue;
+}
+
+#Memes {
+  background-color: navy;
+  height: auto;
+  padding: 50px 20px;
+}
+
+#Tweets {
+  background-color: maroon;
+  height: auto;
+  padding: 50px 20px;
+}
+
+#Videos {
+  background-color: navy;
+  height: auto;
+  padding: 50px 20px;
+}
+
+#Merch {
+  background-color: maroon;
+  height: auto;
+  padding: 50px 20px;
+}
+
+#whitetext {
+  color: white;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
