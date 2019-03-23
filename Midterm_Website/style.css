@@ -28,6 +28,7 @@ color:#8483a8;
 .bg1{
   background-image: url("bg1.jpg");
   min-height:100%;
+  max-width:100%;
 }
 
 .bg2{
