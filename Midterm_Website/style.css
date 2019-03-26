@@ -18,11 +18,11 @@ color:#8483a8;
 /* parallax scrolling style */
 .bg1,.bg2,.bg3{
   position: relative;
-  opacity: 0.7;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  opacity: 0.7;
 }
 
 .bg1{
@@ -168,10 +168,14 @@ h2{
 }
 
 /* Core Pillars Title on Background */
-.bg2 .pillars-title h5{
+.pillars-title h5{
+    padding-top:10%;
+}
+
+h5{
+  color: white;
   font-size:50px;
   text-align:center;
-  padding-top:10%;
 }
 
 .bg2 .pillars-title h6{
@@ -194,7 +198,20 @@ h2{
   align-items: center;
 }
 
+.card{
+  border: none;
+}
+
+.pillars-container{
+  display: flex;
+  align-items: flex-start;
+}
+
 /* sisters section style */
+.bg3 h5{
+  padding-top:5%;
+}
+
 p{
   font-size: 15px;
   text-align: center;
@@ -205,4 +222,21 @@ p{
 #Recruitment{
   padding:10%;
   line-height: 3rem;
+}
+
+/* social media section */
+.container h3{
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+.container a{
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+.first-column{
+  padding-top: 30%;
 }
