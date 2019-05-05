@@ -1,0 +1,434 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica;
+}
+p {
+  font-family: 'Patrick Hand', cursive;
+  color: #4e0632
+}
+h1 {
+  color: #4e0632
+}
+.border-item {
+  background-color: #f9d8ac;
+  position: fixed;
+  z-index: 5;
+}
+.top-border {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-border-line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 5px;
+  background: #E98978;
+}
+.top-border > img {
+  display: block;
+  /* height: 100px; */
+  width: 400px;
+  position: relative;
+  z-index: 4;
+  margin-right: 40%;
+  margin-top: 20px;
+  /* border-radius: 50px; */
+}
+.buy-button {
+  width: 200px;
+  height: 50px;
+  background: #F2B4A9;
+  position: relative;
+  z-index: 4;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Passion One', cursive;
+  font-size: 30px;
+}
+.bottom-border {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+}
+.left-border {
+  position: fixed;
+  width: 15px;
+  left: 0px;
+  top: 100px;
+  height: calc(100vh - 150px);
+}
+.right-border {
+  position: fixed;
+  width: 15px;
+  right: 0px;
+  top: 100px;
+  height: calc(100vh - 150px);
+}
+
+/* I tried setting up a text input after clicking the button but I couldn't finish it*/
+.sign-up-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  opacity: 0;
+  transition: all .2s linear;
+  background-color: rgba(1, 1, 1, .55);
+}
+.sign-up-container.visible {
+  z-index: 9;
+  opacity: 1;
+}
+.sign-up-box {
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  z-index: 0;
+  opacity: 0;
+  transition: all .2s linear;
+  background: #F8F4D8;
+  left: calc(50vw - 200px);
+  top: calc(50vh - 250px);
+  border-radius: 20px;
+}
+.sign-up-box.visible {
+  z-index: 9;
+  opacity: 1;
+}
+main {
+  background: #F8F4D8;
+  padding: 100px 15px 50px 15px;
+  box-sizing: border-box;
+}
+.video-player {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  background-color: black;
+  margin-bottom: 0px;
+}
+.sign-up-banner {
+  margin-top: -10px;
+  padding-top: 10px;
+  background: #F8F4D8;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-banner > h1 {
+  margin-right: 15px;
+  font-family: 'Passion One', cursive;
+  font-size: 50px;
+}
+.button {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: #F2B4A9;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: all .2s linear;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  animation-name: button-jiggle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-family: 'Passion One', cursive;
+}
+.button:hover {
+  background: #E98978;
+}
+@keyframes button-jiggle {
+  0% {
+    transform: rotate(0deg);
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  }
+  50% {
+    transform: rotate(30deg);
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  }
+}
+.intro-banner {
+  padding: 20px 50px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background: #F5C99B;
+}
+.intro-banner > img {
+  margin-right: 50px;
+  height: 400px;
+}
+.intro-banner-text {
+  max-width: 500px;
+}
+.intro-banner-text > h1 {
+  margin-bottom: 10px;
+  font-family: 'Passion One', cursive;
+  font-size: 30px;
+}
+.carousel-item {
+  background: white;
+  height: 300px;
+  width: 100px;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-item-top {
+  height: 200px;
+  background: #F4DEC1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item-image {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel-one {
+  background-image: url('Plumbus1.png');
+}
+.carousel-two {
+  background-image: url('Plumbus2.png');
+}
+.carousel-three {
+  background-image: url('Plumbus3.png');
+}
+.carousel-four {
+  background-image: url('Plumbus4.png');
+}
+.carousel-five {
+  background-image: url('Plumbus5.png');
+}
+.carousel-six {
+  background-image: url('Plumbus6.png');
+}
+.carousel-item-bottom {
+  height: 100px;
+  background: #F8F4D8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item-bottom > p {
+  font-family: 'Passion One', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+.slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+.slick-prev:before {
+  width: 50px;
+  height: 50px;
+}
+.slick-next {
+  right: 25px;
+}
+.slick-prev:before, .slick-next:before {
+  color: orange;
+}
+.accessories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F5C99B;
+  padding-bottom: 20px;
+}
+.accessories-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 30px 0px;
+}
+.accessories-header > h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 30px;
+}
+.accessories-container {
+  width: 99%;
+  margin: auto;
+}
+.accessory {
+  display: inline-block;
+  min-width: 33%;
+  max-width: 33%;
+  margin-bottom: 20px;
+}
+.accessory-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accessory-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accessory-bottom {
+  margin-top: 15px;
+}
+.accessory-image {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.accessory-one{
+  background-image: url('Acc1.jpg');
+}
+.accessory-two{
+  background-image: url('Acc2.jpg');
+}
+.accessory-three{
+  background-image: url('Acc3.jpg');
+}
+.accessory-four{
+  background-image: url('Acc4.jpg');
+}
+.accessory-five{
+  background-image: url('Acc5.jpg');
+}
+.accessory-six{
+  background-image: url('Acc6.jpg');
+}
+.accessory-seven{
+  background-image: url('Acc7.jpg');
+}
+.accessory-eight{
+  background-image: url('Acc8.jpg');
+}
+.accessory-nine{
+  background-image: url('Acc9.jpg');
+}
+.warranty-banner {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.warranty-banner-text {
+  max-width: 500px;
+}
+.warranty-banner-text > h1 {
+  margin-bottom: 10px;
+  font-family: 'Passion One', cursive;
+  font-size: 35px;
+}
+.warranty-banner > img {
+  margin-left: 50px;
+  height: 300px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F2B4A9;
+}
+.footer-top {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* I also planned on including social icons but couldn't finish so I commented my work out */
+/* .social {
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.facebook {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 25px;
+  background-image: url('plumbuslogo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.instagram {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 25px;
+  background-image: url('plumbuslogo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.footer-buy-button {
+  margin-right: 20%;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: #E98978;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Passion One', cursive;
+}
+.footer-seperator {
+  height: 1px;
+  width: 75%;
+  margin: auto;
+  background: #F8F4D8;
+}
+.footer-bottom {
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
